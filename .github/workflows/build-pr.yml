@@ -21,3 +21,7 @@ jobs:
           make install.tools
           make .gitvalidation
           make docs conformance
+      - name: Markdown lint
+        uses: avtodev/markdown-lint@v1
+        with:
+          args: './spec.md'
